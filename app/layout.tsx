@@ -19,7 +19,7 @@ const inter = Inter({
 export const metadata: Metadata = {
   ...siteMetadata(),
   other: {
-    "google-site-verification": "",
+    "google-site-verification": "zXdvlPfQwV8L37Lc-YQurvbOIpMsrnDVoxF0EeNPTrI",
   },
 };
 
