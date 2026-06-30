@@ -3,6 +3,13 @@ import { Phone, Mail, MapPin, Clock } from "lucide-react";
 import { SITE } from "@/lib/config";
 import { locations } from "@/lib/data/locations";
 
+const guideLinks = [
+  { label: "Moving Checklist", href: "/guides/moving-checklist" },
+  { label: "Removal Costs Guide", href: "/guides/house-removal-cost" },
+  { label: "Packing Guide", href: "/guides/packing-guide" },
+  { label: "Student Moving Guide", href: "/guides/student-moving-guide" },
+];
+
 const serviceLinks = [
   { label: "House Removals", href: "/services/house-removals" },
   { label: "Office Removals", href: "/services/office-removals" },
@@ -64,6 +71,16 @@ export default function Footer() {
             <h3 className="text-white font-semibold text-sm mb-4">Services</h3>
             <ul className="space-y-2.5">
               {serviceLinks.map((link) => (
+                <li key={link.href}>
+                  <Link href={link.href} className="text-sm hover:text-white hover:underline transition-colors">
+                    {link.label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+            <h3 className="text-white font-semibold text-sm mt-8 mb-4">Free Guides</h3>
+            <ul className="space-y-2.5">
+              {guideLinks.map((link) => (
                 <li key={link.href}>
                   <Link href={link.href} className="text-sm hover:text-white hover:underline transition-colors">
                     {link.label}

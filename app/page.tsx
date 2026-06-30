@@ -6,6 +6,7 @@ import AreasGrid from "@/components/sections/AreasGrid";
 import PricingTable from "@/components/sections/PricingTable";
 import Testimonials from "@/components/sections/Testimonials";
 import FAQSection from "@/components/sections/FAQSection";
+import GuidesTeaser from "@/components/sections/GuidesTeaser";
 import QuoteForm from "@/components/sections/QuoteForm";
 import FinalCTA from "@/components/sections/FinalCTA";
 import JsonLd from "@/components/seo/JsonLd";
@@ -31,6 +32,7 @@ export default function HomePage() {
       <PricingTable />
       <Testimonials />
       <FAQSection items={homeFaqs} />
+      <GuidesTeaser />
       <QuoteForm />
       <FinalCTA />
     </>

@@ -9,6 +9,8 @@ import { SITE } from "@/lib/config";
 import JsonLd from "@/components/seo/JsonLd";
 import FAQSection from "@/components/sections/FAQSection";
 
+export const revalidate = 86400;
+
 interface Props {
   params: Promise<{ slug: string }>;
 }

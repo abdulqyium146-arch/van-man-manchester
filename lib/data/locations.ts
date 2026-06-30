@@ -13,6 +13,8 @@ export interface Location {
   stations: string[];
   nearbyAreas: string[];
   distanceToCity: string;
+  lat: number;
+  lng: number;
 }
 
 export const locations: Location[] = [
@@ -22,6 +24,8 @@ export const locations: Location[] = [
     postcode: "M26",
     county: "Greater Manchester",
     area: "Bury",
+    lat: 53.5631,
+    lng: -2.3228,
     intro:
       "Radcliffe sits between Bury and Bolton in the heart of Greater Manchester. Whether you're moving into one of the new-build estates off Ainsworth Road or leaving a Victorian terrace near the town centre, our man and van team knows the area inside out.",
     description:
@@ -40,6 +44,8 @@ export const locations: Location[] = [
     postcode: "OL10",
     county: "Greater Manchester",
     area: "Rochdale",
+    lat: 53.5921,
+    lng: -2.2243,
     intro:
       "Heywood is a thriving market town in the borough of Rochdale, close to the M62 and surrounded by the communities of Middleton, Bury and Rochdale. If you're planning a move in or around OL10, our team is ready.",
     description:
@@ -58,6 +64,8 @@ export const locations: Location[] = [
     postcode: "M46",
     county: "Greater Manchester",
     area: "Wigan",
+    lat: 53.5232,
+    lng: -2.4940,
     intro:
       "Atherton is a former mining town in the borough of Wigan, known for its friendly community and affordable housing. If you're moving to or from M46, our man and van team offers fast, friendly removals.",
     description:
@@ -76,6 +84,8 @@ export const locations: Location[] = [
     postcode: "BL6",
     county: "Greater Manchester",
     area: "Bolton",
+    lat: 53.5955,
+    lng: -2.5406,
     intro:
       "Horwich is a large town at the foot of the West Pennine Moors, home to Reebok Stadium and thriving new-build developments. Our man and van team covers BL6 fully, from Rivington to Lostock.",
     description:
@@ -94,6 +104,8 @@ export const locations: Location[] = [
     postcode: "OL9",
     county: "Greater Manchester",
     area: "Oldham",
+    lat: 53.5108,
+    lng: -2.1586,
     intro:
       "Failsworth is a residential town connecting Oldham and Manchester along the A62. With Metrolink access and great transport links, it's a popular choice for commuters — and a busy area for house moves.",
     description:
@@ -112,6 +124,8 @@ export const locations: Location[] = [
     postcode: "M24",
     county: "Greater Manchester",
     area: "Rochdale",
+    lat: 53.5547,
+    lng: -2.1972,
     intro:
       "Middleton is one of Greater Manchester's most well-connected towns, with easy access to the M60, Metrolink and Rochdale town centre. Our man and van team covers every corner of M24.",
     description:
@@ -130,6 +144,8 @@ export const locations: Location[] = [
     postcode: "M28",
     county: "Greater Manchester",
     area: "Salford",
+    lat: 53.5238,
+    lng: -2.3954,
     intro:
       "Walkden is a large suburb of Salford with a busy town centre, excellent schools and great motorway access via the M60 and M61. Our man and van service is fully experienced across all of M28.",
     description:
@@ -148,6 +164,8 @@ export const locations: Location[] = [
     postcode: "WN7",
     county: "Greater Manchester",
     area: "Wigan",
+    lat: 53.4984,
+    lng: -2.5185,
     intro:
       "Leigh is a large market town in the borough of Wigan, known for Leigh Harriers rugby league and excellent bus connections across Greater Manchester. Our removal service covers all of WN7.",
     description:
@@ -166,6 +184,8 @@ export const locations: Location[] = [
     postcode: "OL9",
     county: "Greater Manchester",
     area: "Oldham",
+    lat: 53.5308,
+    lng: -2.1543,
     intro:
       "Chadderton is one of Oldham's most popular residential areas, bordering Failsworth, Royton and the M60. Our man and van service runs throughout OL9 every day of the week.",
     description:
@@ -184,6 +204,8 @@ export const locations: Location[] = [
     postcode: "M45",
     county: "Greater Manchester",
     area: "Bury",
+    lat: 53.5520,
+    lng: -2.2989,
     intro:
       "Whitefield is a popular commuter suburb of Bury, with fast Metrolink access to Manchester and a mix of 1930s semis and modern new-builds. Our man and van team covers all of M45.",
     description:
@@ -202,6 +224,8 @@ export const locations: Location[] = [
     postcode: "OL2",
     county: "Greater Manchester",
     area: "Oldham",
+    lat: 53.5656,
+    lng: -2.1222,
     intro:
       "Royton is a town in the borough of Oldham, nestled between Shaw, Chadderton and Oldham town centre. Our man and van service covers OL2 with competitive prices and same-day availability.",
     description:
@@ -220,6 +244,8 @@ export const locations: Location[] = [
     postcode: "OL5",
     county: "Greater Manchester",
     area: "Tameside",
+    lat: 53.5155,
+    lng: -2.0358,
     intro:
       "Mossley is a hillside mill town in Tameside, known for its stunning moorland scenery, heritage architecture and tight-knit community. Our man and van service covers OL5 and the surrounding Saddleworth villages.",
     description:
@@ -238,6 +264,8 @@ export const locations: Location[] = [
     postcode: "M30",
     county: "Greater Manchester",
     area: "Salford",
+    lat: 53.4847,
+    lng: -2.3320,
     intro:
       "Eccles is one of Greater Manchester's best-connected towns, with Metrolink access, the A57 and proximity to the M60. Our man and van service covers all of M30 with same-day availability.",
     description:
@@ -256,6 +284,8 @@ export const locations: Location[] = [
     postcode: "M44",
     county: "Greater Manchester",
     area: "Salford",
+    lat: 53.4439,
+    lng: -2.4277,
     intro:
       "Irlam is a residential suburb of Salford bordering the Manchester Ship Canal, popular with families for its affordable housing and good schools. Our man and van team covers all of M44.",
     description:
@@ -274,6 +304,8 @@ export const locations: Location[] = [
     postcode: "M27",
     county: "Greater Manchester",
     area: "Salford",
+    lat: 53.5118,
+    lng: -2.3397,
     intro:
       "Swinton is a busy town in the city of Salford, well-connected to both Manchester and Bolton via the A666 and A57. Our man and van service covers all of M27 at competitive prices.",
     description:
@@ -292,6 +324,8 @@ export const locations: Location[] = [
     postcode: "M29",
     county: "Greater Manchester",
     area: "Wigan",
+    lat: 53.5132,
+    lng: -2.4731,
     intro:
       "Tyldesley is a former coal mining town in the borough of Wigan, close to Atherton, Leigh and the M61. Our man and van team covers all of M29 with fast, affordable removals.",
     description:
@@ -310,6 +344,8 @@ export const locations: Location[] = [
     postcode: "WA3",
     county: "Greater Manchester",
     area: "Wigan",
+    lat: 53.4773,
+    lng: -2.5959,
     intro:
       "Golborne is a small town on the southern edge of Greater Manchester, bordering Warrington and close to the M6 and A573. Our man and van service covers WA3 at highly competitive prices.",
     description:
@@ -328,6 +364,8 @@ export const locations: Location[] = [
     postcode: "BL5",
     county: "Greater Manchester",
     area: "Bolton",
+    lat: 53.5499,
+    lng: -2.5268,
     intro:
       "Westhoughton is a large town in the borough of Bolton, known for the famous Keaw Yed Wakes and excellent M61 motorway access. Our man and van team covers all of BL5.",
     description:
@@ -346,6 +384,8 @@ export const locations: Location[] = [
     postcode: "OL15",
     county: "Greater Manchester",
     area: "Rochdale",
+    lat: 53.6430,
+    lng: -2.0944,
     intro:
       "Littleborough is a picturesque market town on the edge of the South Pennines, close to Hollingworth Lake and the Yorkshire border. Our man and van team covers OL15 and the surrounding rural areas.",
     description:
@@ -364,6 +404,8 @@ export const locations: Location[] = [
     postcode: "OL6",
     county: "Greater Manchester",
     area: "Tameside",
+    lat: 53.4992,
+    lng: -2.0966,
     intro:
       "Ashton-under-Lyne is the market town at the heart of Tameside, with an excellent indoor market, strong transport links and a diverse community. Our man and van team covers all of OL6 and Tameside.",
     description:
