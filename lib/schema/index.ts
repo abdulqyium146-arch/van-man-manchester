@@ -12,11 +12,11 @@ export function organizationSchema() {
     url: SITE.url,
     logo: {
       "@type": "ImageObject",
-      url: `${SITE.url}/logo.png`,
+      url: `${SITE.url}/logo.svg`,
       width: 200,
       height: 60,
     },
-    image: `${SITE.url}/og-image.jpg`,
+    image: `${SITE.url}/opengraph-image`,
     description: SITE.description,
     slogan: SITE.tagline,
     telephone: SITE.phone,
@@ -88,7 +88,7 @@ export function localBusinessSchema() {
     priceRange: "££",
     currenciesAccepted: "GBP",
     paymentAccepted: "Cash, Bank Transfer, Debit Card, Credit Card",
-    image: `${SITE.url}/og-image.jpg`,
+    image: `${SITE.url}/opengraph-image`,
     address: {
       "@type": "PostalAddress",
       addressLocality: SITE.address.city,
@@ -129,7 +129,7 @@ export function locationPageSchema(location: Location) {
     description: `Professional man and van removal service in ${location.name}, ${location.postcode}. House removals, office moves, student removals and same-day service across ${location.county}.`,
     openingHours: SITE.openingHours,
     priceRange: "££",
-    image: `${SITE.url}/og-image.jpg`,
+    image: `${SITE.url}/opengraph-image`,
     address: {
       "@type": "PostalAddress",
       addressLocality: location.name,
@@ -211,7 +211,7 @@ export function articleSchema({
     url: `${SITE.url}/guides/${slug}`,
     datePublished: publishedAt,
     dateModified: updatedAt,
-    image: `${SITE.url}/og-image.jpg`,
+    image: `${SITE.url}/opengraph-image`,
     author: {
       "@type": "Organization",
       "@id": `${SITE.url}/#organization`,
@@ -222,7 +222,7 @@ export function articleSchema({
       "@type": "Organization",
       "@id": `${SITE.url}/#organization`,
       name: SITE.name,
-      logo: { "@type": "ImageObject", url: `${SITE.url}/logo.png` },
+      logo: { "@type": "ImageObject", url: `${SITE.url}/logo.svg` },
     },
     mainEntityOfPage: {
       "@type": "WebPage",

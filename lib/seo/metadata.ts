@@ -38,13 +38,13 @@ export function siteMetadata(overrides: Partial<Metadata> = {}): Metadata {
       siteName: SITE.name,
       title: `${SITE.name} | Manchester's Most Trusted Removal Service`,
       description: SITE.description,
-      images: [{ url: "/og-image.jpg", width: 1200, height: 630, alt: SITE.name }],
+      images: [{ url: "/opengraph-image", width: 1200, height: 630, alt: SITE.name }],
     },
     twitter: {
       card: "summary_large_image",
       title: `${SITE.name} | Manchester Removals`,
       description: SITE.description,
-      images: ["/og-image.jpg"],
+      images: ["/opengraph-image"],
     },
     alternates: { canonical: SITE.url },
     ...overrides,
@@ -75,9 +75,9 @@ export function locationMetadata(location: Location): Metadata {
       siteName: SITE.name,
       title,
       description,
-      images: [{ url: "/og-image.jpg", width: 1200, height: 630, alt: `Man and Van ${location.name}` }],
+      images: [{ url: "/opengraph-image", width: 1200, height: 630, alt: `Man and Van ${location.name}` }],
     },
-    twitter: { card: "summary_large_image", title, description, images: ["/og-image.jpg"] },
+    twitter: { card: "summary_large_image", title, description, images: ["/opengraph-image"] },
     alternates: { canonical: url },
   });
 }
@@ -97,9 +97,9 @@ export function serviceMetadata(service: Service): Metadata {
       siteName: SITE.name,
       title,
       description,
-      images: [{ url: "/og-image.jpg", width: 1200, height: 630, alt: service.name }],
+      images: [{ url: "/opengraph-image", width: 1200, height: 630, alt: service.name }],
     },
-    twitter: { card: "summary_large_image", title, description, images: ["/og-image.jpg"] },
+    twitter: { card: "summary_large_image", title, description, images: ["/opengraph-image"] },
     alternates: { canonical: url },
   });
 }

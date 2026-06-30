@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import { siteMetadata } from "@/lib/seo/metadata";
@@ -16,10 +16,25 @@ const inter = Inter({
   preload: true,
 });
 
+export const viewport: Viewport = {
+  themeColor: "#2563EB",
+  width: "device-width",
+  initialScale: 1,
+};
+
 export const metadata: Metadata = {
   ...siteMetadata(),
+  applicationName: "Man and Van Manchester",
+  manifest: "/site.webmanifest",
+  appleWebApp: {
+    capable: true,
+    statusBarStyle: "default",
+    title: "Man & Van Manchester",
+  },
   other: {
     "google-site-verification": "zXdvlPfQwV8L37Lc-YQurvbOIpMsrnDVoxF0EeNPTrI",
+    "msapplication-TileColor": "#2563EB",
+    "msapplication-config": "/browserconfig.xml",
   },
 };
 

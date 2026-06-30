@@ -31,7 +31,7 @@ export function GET() {
     <lastBuildDate>${new Date().toUTCString()}</lastBuildDate>
     <atom:link href="${SITE.url}/feed.xml" rel="self" type="application/rss+xml" />
     <image>
-      <url>${SITE.url}/logo.png</url>
+      <url>${SITE.url}/logo.svg</url>
       <title>${SITE.name}</title>
       <link>${SITE.url}</link>
     </image>
