@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Phone, Mail, MapPin, Clock } from "lucide-react";
+import { Phone, Mail, MapPin, Clock, ExternalLink } from "lucide-react";
 import { SITE } from "@/lib/config";
 import { locations } from "@/lib/data/locations";
 
@@ -129,7 +129,34 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="mt-12 pt-8 border-t border-gray-800 flex flex-col sm:flex-row items-center justify-between gap-4">
+        {/* Trusted Partners */}
+        <div className="mt-10 pt-8 border-t border-gray-800">
+          <p className="text-xs font-semibold text-gray-500 uppercase tracking-widest mb-4">Trusted Partners</p>
+          <div className="flex flex-wrap gap-6">
+            <a
+              href="https://getrapidremovals.co.uk/"
+              target="_blank"
+              rel="noopener noreferrer"
+              title="Get Rapid Removals — UK removal specialists"
+              className="flex items-center gap-1.5 text-sm text-gray-400 hover:text-white transition-colors group"
+            >
+              <ExternalLink className="w-3.5 h-3.5 text-gray-600 group-hover:text-blue-400 shrink-0" />
+              Get Rapid Removals
+            </a>
+            <a
+              href="https://jmcremovals.co.uk/"
+              target="_blank"
+              rel="noopener noreferrer"
+              title="JMC Removals — professional removal services"
+              className="flex items-center gap-1.5 text-sm text-gray-400 hover:text-white transition-colors group"
+            >
+              <ExternalLink className="w-3.5 h-3.5 text-gray-600 group-hover:text-blue-400 shrink-0" />
+              JMC Removals
+            </a>
+          </div>
+        </div>
+
+        <div className="mt-8 pt-6 border-t border-gray-800 flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="text-xs text-gray-600">
             © {new Date().getFullYear()} {SITE.name}. All rights reserved.{" "}
             <Link href={SITE.url} className="hover:text-gray-400">
